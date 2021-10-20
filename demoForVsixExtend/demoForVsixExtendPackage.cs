@@ -48,6 +48,7 @@ namespace demoForVsixExtend
             // Do any initialization that requires the UI thread after switching to the UI thread.
             await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
             await FirstCommand.InitializeAsync(this);
+            await SecondCommand.InitializeAsync(this);
         }
 
         #endregion
